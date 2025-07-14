@@ -6,7 +6,7 @@ export const addToCartSlice = createSlice({
     cartItem: [],
   },
   reducers: {
-    addtocart: (state, action) => {
+    addToCart: (state, action) => {
 
       let alldata = state.cartItem.find(item => item.basicTxt === action.payload.basicTxt)
 
@@ -39,6 +39,6 @@ export const addToCartSlice = createSlice({
   }
 })
 
-export const { addtocart, increment, decrement } = addToCartSlice.actions
+export const { addToCart, increment, decrement } = addToCartSlice.actions
 
 export default addToCartSlice.reducer

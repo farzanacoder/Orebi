@@ -4,13 +4,13 @@ import Flex from './Flex'
 import { FaHeart, FaShoppingCart } from 'react-icons/fa'
 import { FaCodeCompare } from 'react-icons/fa6'
 import { useDispatch } from 'react-redux'
-import { addtocart } from '../slices/addToCartSlice'
+import { addToCart } from '../slices/addToCartSlice'
 
 const Carts = ({price,className,img,basicTxt}) => {
   let dispatch = useDispatch()
   
   let handleAddToCart = ()=>{
-    dispatch(addtocart({
+    dispatch(addToCart({
       basicTxt : basicTxt,
       price :price,
       image : img,

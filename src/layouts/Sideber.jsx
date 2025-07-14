@@ -14,6 +14,7 @@ const Sideber = () => {
     let [showcart, setShowcart] = useState(false)
     let data = useSelector((state) => state.addToCart.cartItem)
     
+    
     let handleincrement= (item)=>{
         dispatch(increment(item))
     }

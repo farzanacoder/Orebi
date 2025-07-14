@@ -8,6 +8,8 @@ import { categoryFunction } from '../slices/categorySlice'
 const Category = ({title,type}) => {
       let dispatch = useDispatch()
       let category = useSelector ((state)=>state.category.value)
+      console.log(category);
+      
     
     let handleMinus = () => {
         dispatch(categoryFunction(false))

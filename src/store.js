@@ -1,15 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from './Slices/CounterSlice'
-import breadbutton from './slices/breadcrumb'
-import categorySlice from './slices/categorySlice'
-import addToCartSlice from './slices/addToCartSlice'
+import addToCartReducer from './slices/addToCartSlice'
+import breadbuttonReducer from './slices/breadcrumb'
+import categoryReducer from './slices/categorySlice'
+import counterReducer from './slices/counterSlice'
+
+
 
 export default configureStore({
   reducer: {
-    counter: counterSlice,
-    bread: breadbutton,
-    category: categorySlice,
-    addToCart: addToCartSlice,
+    counter: counterReducer,
+    bread: breadbuttonReducer,
+    category: categoryReducer,
+    addToCart: addToCartReducer,
 
   }
 })
