@@ -21,9 +21,8 @@ import Ads_2 from '../assets/Ads_2.png'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import PrevArr from '../components/prevArr'
-import NextArr from '../components/nextArr'
-// import "slick-carousel/slick/slick-theme.css";
+import PrevArr from '../components/PrevArr'
+import NextArr from '../components/NextArr'
 
 const Home = () => {
   var settings = {
